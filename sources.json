@@ -12,7 +12,7 @@
     "sourceName": "Istat",
     "sourceSite": "https://www.istat.it/it/archivio/6789",
     "fileName": "it-municipalities.csv",
-    "lastUpdate": "2020-04-03T05:00:00Z"
+    "lastUpdate": "2020-04-03T07:00:00Z"
   },
   {
     "sourceId": 2,
@@ -65,8 +65,8 @@
     "sourceName": "Istat",
     "sourceSite": "https://www.istat.it/it/archivio/240401",
     "sourceLegend": "docs/it-deaths-200321-daily-legend.txt",
-    "fileName": "comune_giorno.csv",
-    "lastUpdate": "2020-04-19T05:00:00Z"
+    "fileName": "comuni_giornaliero.csv",
+    "lastUpdate": "2020-05-04T05:00:00Z"
   },
   {
     "sourceId": 6,
@@ -131,15 +131,45 @@
     "entity": "municipalities-cloud",
     "name": "List of Italian municipalities whose data are kept in cloud based ANPR",
     "country": "it",
-    "type": "xlsx",
+    "type": "csv",
     "data": "raw",
-    "ingest": false,
+    "ingest": true,
     "ingestionType": "replace",
-    "fileName": "Comuni_subentrati.xlsx",
+    "fileName": "Comuni_subentrati.csv",
     "sourceName": "Elenco comuni italiani ANPR",
     "sourceUri": "http://www.sogei.it/flex/cm/pages/ServeAttachment.php/L/IT/D/9%252F0%252F3%252FD.9e3c52c5ac033f01bb63/P/BLOB%3AID%3D844/E/xlsx",
     "sourceSite": "http://www.sogei.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/844",
-    "lastUpdate": "2020-04-21T05:00:00Z"
+    "lastUpdate": "2020-04-22T05:00:00Z"
+  },
+  {
+    "sourceId": 11,
+    "entity": "countries-total",
+    "name": "Cases and deaths per country",
+    "type": "csv",
+    "data": "raw",
+    "ingest": false,
+    "ingestionType": "replace",
+    "fileName": "worldwide_cases.csv",
+    "sourceName": "COVID-19 cases worldwide",
+    "sourceUri": "https://opendata.ecdc.europa.eu/covid19/casedistribution/csv",
+    "sourceSite": "https://data.europa.eu/euodp/en/data/dataset/covid-19-coronavirus-data/resource/260bbbde-2316-40eb-aec3-7cd7bfc2f590",
+    "lastUpdate": "2020-04-25T05:00:00Z"
+  },
+  {
+    "sourceId": 12,
+    "entity": "municipalities-daily-deaths-test",
+    "name": "***Official Data on deaths for year 2020 and previous years***",
+    "country": "it",
+    "type": "csv",
+    "data": "raw",
+    "ingest": true,
+    "ingestionType": "replace",
+    "ingestionProgress": 10000,
+    "sourceUri": "https://www.istat.it/it/files//2020/03/dati-giornalieri-comune-16aprile.zip",
+    "sourceName": "Istat",
+    "sourceSite": "https://www.istat.it/it/archivio/240401",
+    "sourceLegend": "docs/it-deaths-200321-daily-legend.txt",
+    "fileName": "comuni_giornaliero.csv",
+    "lastUpdate": "2020-05-04T05:00:00Z"
   }
 ]
-
